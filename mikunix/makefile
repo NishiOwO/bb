@@ -41,12 +41,12 @@ CC = gcc
 #ULTRADRV=drv_old.o
 
 #OSFLAGS = -O3 $(OSDEF) $(ULTRA)
-OSFLAGS = -O3 $(OSDEF) 
+OSFLAGS = -O3 $(OSDEF) -I/usr/pkg/include
 #debug options
 #OSFLAGS = -g $(OSDEF) $(ULTRA)
 
 #LIBS= -lm $(ULTRALIB)
-LIBS= -lm 
+LIBS= -lm -L/usr/pkg/lib -Wl,-R/usr/pkg/lib -lasound
 #DRIVERS = drv_vox.o $(ULTRADRV)
 DRIVERS = drv_alsa.o
 
