@@ -490,6 +490,7 @@ extern DRIVER drv_gus;		/* gravis ultrasound driver */
 extern DRIVER drv_ultra;	/* ultra driver for linux */
 extern DRIVER drv_sb;		/* soundblaster DSP driver */
 extern DRIVER drv_ss;		/* ensoniq soundscape driver */
+extern DRIVER drv_alsa;		/* alsa driver */
 extern DRIVER drv_w95;		/* win95 driver */
 extern DRIVER drv_awe;		/* experimental SB-AWE driver */
 extern DRIVER drv_vox;		/* linux voxware driver */

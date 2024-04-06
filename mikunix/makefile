@@ -25,7 +25,7 @@
 #
 ############################################################################
 
-OSDEF=-DOSS
+OSDEF=-DALSA
 CC = gcc
 
 # if you want to use the Ultra driver uncomment the 3 lines below. 
@@ -48,7 +48,7 @@ OSFLAGS = -O3 $(OSDEF)
 #LIBS= -lm $(ULTRALIB)
 LIBS= -lm 
 #DRIVERS = drv_vox.o $(ULTRADRV)
-DRIVERS = drv_vox.o
+DRIVERS = drv_alsa.o
 
 ############################################################################
 #

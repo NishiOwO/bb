@@ -72,6 +72,8 @@ int main(int argc, char *argv[])
     MD_RegisterDriver(&drv_sun);
 #elif defined(SOLARIS)
     MD_RegisterDriver(&drv_sun);
+#elif defined(ALSA)
+    MD_RegisterDriver(&drv_alsa);
 #elif defined(__alpha)
     MD_RegisterDriver(&drv_AF);
 #elif defined(OSS)
